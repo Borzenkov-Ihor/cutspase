@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -58,9 +63,9 @@ body {
 
 .intro-form {
     position: relative;
-    overflow: hidden;
-    margin-top: 42px;   
-    width: 459px;
+    overflow: hidden;   
+    max-width: 460px;
+    margin-top: 40px;
 }
 
 .btn {
@@ -69,24 +74,30 @@ body {
     color: white;
     font-size: 16px;
     display: inline-block;
-    padding: 16px 37px;
+    padding: 20px 37px;
     border-radius: 50px;
     cursor: pointer;
-    border: 0;   
-    left: 286px;    
+    border: 0;  
+    text-decoration: none; 
+       
 }
 
 .intro-form .btn {
     position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .intro-form-text {
     border: 0;
-    padding: 16px;
+    padding: 20px;
     font-size: 16px;
     box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 50px;
-    width: 400px;
+    width: 100%;
+    outline: none;
+
     
 }
 
@@ -96,4 +107,40 @@ body {
     align-items: center;
     margin-top: 35px;
     
+}
+
+.product-block {
+    background-image: url(../img/Product-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 90px;
+    border-radius: 20px;
+}
+
+.product-block-img {
+    position: absolute;
+    top: 60px;
+    left: -300px;
+}
+
+.product-block-text {
+    margin-left: 60%;
+}
+
+@media (max-width: 1024px) {
+    .product-block-img {
+        position: static;
+        margin-left: -30px;
+        max-width: 100%;
+    }
+
+    .product-block {
+        padding: 30px;
+    }
+
+    .product-block-text {
+        margin: 30px 0 0;
+    }
 }
