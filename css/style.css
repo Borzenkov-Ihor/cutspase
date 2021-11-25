@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 .container {
@@ -82,6 +83,12 @@ body {
        
 }
 
+.icon {
+    position: absolute;
+    top: 34%;
+    left: 5%;
+}
+
 .intro-form .btn {
     position: absolute;
     right: 0;
@@ -91,14 +98,12 @@ body {
 
 .intro-form-text {
     border: 0;
-    padding: 20px;
+    padding: 20px 20px 20px 70px;
     font-size: 16px;
     box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 50px;
     width: 100%;
-    outline: none;
-
-    
+    outline: none;   
 }
 
 .logo-2 {
@@ -127,6 +132,7 @@ body {
 
 .product-block-text {
     margin-left: 60%;
+    color: #FFFFFF;
 }
 
 .heading {
@@ -154,6 +160,72 @@ body {
     max-width: 360px;
 }
 
+.blok-2 {
+    margin-top: 100px;
+    margin-bottom: 145px;
+    display: flex;
+}
+
+.blok-2-image-left {
+    margin-left: -83px;
+    margin-right: 30px;
+}
+
+.blok-2-images {
+    display: flex;
+}
+
+.blok-2-text {
+    padding: 68px 0 0 200px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+.blok-2-westlake {
+    position: relative;
+    margin-left: -254px;
+    padding-top: 322px;
+    max-width: 300px;
+}
+
+.kostyl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    height: 141px;
+    font-weight: 400;
+}
+
+.west-lake-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.play {
+    background: #FFFFFF;
+    border-radius: 29px;
+    font-weight: bold;
+    font-size: 16px;
+    color: black; 
+    margin-left: 30px;
+    padding-right: 20px;
+}
+
+.icon-play {
+    position: relative;
+    margin-left: -135px;
+}
+
+
+
+
 @media (max-width: 1024px) {
     .product-block-img {
         position: static;
@@ -167,5 +239,163 @@ body {
 
     .product-block-text {
         margin: 30px 0 0;
+    }
+
+   .container {
+       max-width: 1024px;
+   }
+
+   .col {
+       padding: 1%;
+       max-width: 45%;
+   }
+
+   .navbar-list {
+       gap: 30px;
+       margin-right: 10px;
+   }
+
+   .experience-img {
+       position: static;
+       max-width: 500px;
+       margin-top: 40px;
+   }
+
+   .experience-sect {
+       padding-bottom: 0;
+   }
+
+   .experience-sect .container {
+       display: flex;
+       flex-direction: column;
+       
+   }
+
+   .blok-2 {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .blok-2-westlake {
+        margin: 0;
+        padding: 0;
+   }
+
+   .blok-2-text {
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+}
+
+    .product-sect {
+        margin: 30px auto;
+    }
+
+    
+}
+
+@media (max-width:768px) {
+
+    
+
+    .container {
+        max-width: 768px;
+    }
+
+    .logo-2 {
+        flex-wrap: wrap;
+        
+    }
+
+    .row {
+        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .col {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .main-heading {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;   
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-img  {
+        width: 768px;
+        height: 600px;
+        margin: 0;
+       
+    }
+    
+    .intro-form {
+        max-width: 700px;
+    }
+
+    .navbar {
+        margin: 20px auto;
+    }
+
+    .blok-2-westlake {
+        margin-top: 350px;
+        margin-left: -200px;
+   }
+}
+
+@media (max-width:415px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        max-width: 320px;
+        padding: 0.2%;
+    }
+
+    .intro-img  {
+        width: 320px;
+        height: 400px;
+        margin: 0;
+       
+    }
+
+    .navbar-list {
+        max-width: 320px;
+        gap: 10px;
+        
+    }
+
+    .intro-form-text {
+        padding-left: 50px;
+        font-size: 10px;
+    }
+
+    .blok-2-image-right {
+        max-width: 320px;
+    }
+
+    .blok-2-westlake {
+        margin-top: 350px;
+        margin-left: -470px;
+    }
+
+   .blok-2-images {
+       flex-direction: column;
+    }
+
+   .blok-2-westlake {
+    margin-left: -20px;
+    margin-top: -100px;
     }
 }
