@@ -58,8 +58,34 @@ body {
 
 
 
+
+
 .intro-img {
     margin-left: 15px;
+    transition: 1s;
+    animation: intro-img-scale 5s 2;
+}
+
+@keyframes intro-img-scale {
+    0% {
+        transform: scale(1,1);
+    }
+
+    25% {
+        transform: scale(1,1.025);
+    }
+
+    50% {
+        transform: scale(1,1.05);
+    }
+
+    75% {
+        transform: scale(1,1.025);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
 }
 
 .intro-form {
@@ -80,7 +106,11 @@ body {
     cursor: pointer;
     border: 0;  
     text-decoration: none; 
-       
+    transition: 0.5s;  
+}
+
+.btn:hover {
+    background-color: gray;
 }
 
 .icon {
@@ -223,8 +253,35 @@ h3 {
     margin-left: -135px;
 }
 
+.footer-main {
+    padding: 85px 0;
+}
 
+.social-links-item {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 23px;
+}
 
+.social-link-fb {
+    color: #4267B2;
+}
+
+.social-link-twitter {
+    color: #1DA1F2;
+}
+
+.social-links-youtube {
+    color: #FF0000;
+}
+
+.social-link-linkedin-in {
+    color: #006699;
+}
+
+a:hover {
+    color: chocolate;
+}
 
 @media (max-width: 1024px) {
     .product-block-img {
@@ -381,8 +438,14 @@ h3 {
         font-size: 10px;
     }
 
+    .blok-2-image-left {
+        margin-left: -19px;
+        margin-right: 0;
+    }
+
     .blok-2-image-right {
         max-width: 320px;
+        margin-left: -71px;
     }
 
     .blok-2-westlake {
@@ -398,4 +461,15 @@ h3 {
     margin-left: -20px;
     margin-top: -100px;
     }
+
+    .play {
+        margin: 15px auto;
+        padding: 20px 37px;
+    }
+
+    .icon-play {
+        position: relative;
+        margin-left: -151px;
+    }
+
 }
