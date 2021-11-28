@@ -310,6 +310,7 @@ a:hover {
    .navbar-list {
        gap: 30px;
        margin-right: 10px;
+       padding-left: 10px;
    }
 
    .experience-img {
@@ -361,7 +362,7 @@ a:hover {
 
     .logo-2 {
         flex-wrap: wrap;
-        
+        gap: 20px;
     }
 
     .row {
@@ -430,7 +431,7 @@ a:hover {
     .navbar-list {
         max-width: 320px;
         gap: 10px;
-        
+        margin-left: 10px;
     }
 
     .intro-form-text {
