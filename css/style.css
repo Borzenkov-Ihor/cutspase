@@ -55,9 +55,35 @@ body {
     line-height: 1.5;
     margin-right: 103px;
 }
+.serve-sect{
+    margin-top: 145px ;
+}
 
+.serve-container {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
+.buyer-seller-sect {
+    display: flex;
+    gap: 30px;
+}
 
+.buyers, .seller {
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.buyers {
+    background-color: #F78434;
+    color: white;
+}
+
+.seller {
+    background-color: #FFFFFF;
+}
 
 
 .intro-img {
@@ -65,6 +91,26 @@ body {
     transition: 1s;
     animation: intro-img-scale 5s 2;
 }
+
+.choose-cont{
+    text-align: center;
+    margin-top: 110px;
+}
+
+.choose-columns {
+    display: flex;
+    margin-top: 58px;
+}
+
+.choose-col {
+    width: 25%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+}
+
 
 @keyframes intro-img-scale {
     0% {
@@ -188,6 +234,14 @@ body {
 
 .experience-text {
     max-width: 360px;
+    color: #FFFFFF;
+    
+}
+
+.experience-sect-btn {
+    color: #323232;
+    background-color: #FFFFFF;
+    margin-top: 30px;
 }
 
 .blok-2 {
@@ -283,6 +337,84 @@ a:hover {
     color: chocolate;
 }
 
+.feedback-sect {
+    margin-top: 170px;
+}
+
+.main-container-feedback {
+    display: flex;
+    margin-top: 58px;
+}
+
+.feedback-cont {
+    width: 33%;
+    text-align: left;
+}
+
+.feedback-text-blok {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-cont-text {
+    padding: 31px 29px;
+}
+
+.text-feedback {
+    width: 50%;
+    margin: 0;
+}
+
+.text-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text-city {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F78434;
+}
+
+.text-city-1 {
+    color: #58BEBF;
+}
+
+.play-icons {
+    margin: 25px 0 0 0;
+    padding: 16px 40px;
+    color: orange;
+}
+
+.footer-row {
+    display: flex;
+
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 20%;
+}
+
+.footer-col-1 {
+    width: 40%;
+}
+
+.footer-text {
+    font-size: 21px;
+    font-weight: 700;
+    
+}
+
+.footer-a {
+    text-decoration: none;
+    color: #323232;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 1024px) {
     .product-block-img {
         position: static;
@@ -332,10 +464,12 @@ a:hover {
    .blok-2 {
        flex-direction: column;
        text-align: center;
+       
    }
 
    .blok-2-westlake {
-        margin: 0;
+        margin-left: -280px;
+        margin-top: 380px;
         padding: 0;
    }
 
@@ -349,11 +483,35 @@ a:hover {
         margin: 30px auto;
     }
 
+    .intro-img {
+        max-width: 100%;
+    }
+
+    .logo-2 {
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .intro-form {
+        margin-left: 20px;
+        width: 400px;
+    }
     
+    .second-sect {
+        width: 100%;
+    }
+
+    .blok-2-images {
+        max-width: 100%;
+    }
 }
 
 @media (max-width:768px) {
 
+    .blok-2-image-left, .blok-2-image-right {
+        max-width: 100%;
+    }
     
 
     .container {
@@ -390,9 +548,9 @@ a:hover {
     }
 
     .intro-img  {
-        width: 768px;
+        width: 100%;
         height: 600px;
-        margin: 0;
+        margin: 0 auto;
        
     }
     
@@ -404,10 +562,12 @@ a:hover {
         margin: 20px auto;
     }
 
+    
+
     .blok-2-westlake {
-        margin-top: 350px;
-        margin-left: -200px;
-   }
+    margin-top: 350px;
+    margin-left: -288px;
+    }
 }
 
 @media (max-width:415px) {
