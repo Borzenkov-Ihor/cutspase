@@ -416,6 +416,12 @@ a:hover {
     letter-spacing: 0.5px;
 }
 
+.pack-Man {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
 @media (max-width: 1024px) {
     .product-block-img {
         position: static;
@@ -535,6 +541,10 @@ a:hover {
 }
 
 @media (max-width:768px) {
+
+    .pack-Man {
+        display: none;
+    }
 
     .navbar {
         flex-direction: column;
